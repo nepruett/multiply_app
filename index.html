@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en" data-ng-app="multiplyApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplication</title>
+    <link href="multiply_app/css/my.css" rel="stylesheet">
+  </head>
+  <body data-ng-controller="AppCtrl">
+    <div id="wrap">
+      <div id="problem">
+        <div ng-if="won">
+          Congratulations!
+        </div>
+        <div ng-if="!won">
+          {{currentProblem.problem}}
+        </div>
+      </div>
+      <div id="answers">
+        <div data-ng-repeat="answer in answers" data-ng-click="answerClick(answer)" class="answerButton">
+          <div ng-if="answer.used">
+            <img src="multiply_app/img/check_mark.png">
+          </div>
+          <div ng-if="!answer.used">
+            {{answer.number}}
+          </div>
+      </div>
+    </div>
+    <div id="controls">
+      <div class="controlButton" id="settings">Settings</div>
+      <div class="controlButton" id="newSet" data-ng-click="newSetClick()">New Set</div>
+      <div class="controlButton" id="stats">Statistics</div>
+    </div>
+    <script src="underscore/js/underscore.js"></script>
+    <script src="angular-1.2.12/angular.js"></script>
+    <script src="multiply_app/js/my.js"></script>
+  </body>
+</html>

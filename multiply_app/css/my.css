@@ -1,0 +1,55 @@
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#problem {
+    width: 100%;
+    background-color: #AFAFAF;
+    text-align: center;
+    font-size: 75px;
+    height: 30%;
+
+}
+
+#answers {
+    overflow: auto;
+    width: 100%;
+    height: 65%;
+    background-color: #DCDCCD;
+    font-size: 75px;
+}
+
+#controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #AFAFAF;
+    font-size: 75px;
+    clear: both;
+}
+
+.controlButton {
+    float: left;
+    text-align: center;
+    background-color: #00aaaa;
+    width: 33%;
+}
+
+#newSet {
+    background-color: #a47e3c;
+}
+
+#answers img {
+    width: 25%;
+    height: auto;
+}
+
+.answerButton {
+    display: inline-table;
+    float: left;
+    background-color: #aaaa11;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
